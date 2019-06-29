@@ -1,8 +1,25 @@
-body *{
-  outline: 1px solid red;
+body * {
+    outline: 1px solid red;
 }
-.first-styled-span{
-  display: inline-block;
-  width: 100px;
-  height: 100px;
+.pos-fixed {
+    background-color: red;
+    height: 40px;
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    z-index: 1;
+}
+.pos-relative {
+    margin-top: 50px;
+    position: relative;
+    top: 20px;
+    top: 20px;
+}
+
+.pos-absolute {
+    position: absolute;
+    top:0;
+    left:0;
+    background-color: green;
 }
