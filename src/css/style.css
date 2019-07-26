@@ -1,0 +1,148 @@
+.wide {
+    width: 100%;
+}
+.primary {
+    width: 1080px;
+    margin: auto;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.header  {
+    height: 80px;
+    padding-top: 15px;
+    /* border-bottom: 2px solid orange; */
+}
+.logo {
+    width: 250px;
+}
+.logo img {
+    width: 70px;
+    float: left;
+}
+.slogan {
+    display: inline-block;
+    float: left;
+    margin: 5px 15px;
+    line-height: 30px;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.slogan span:nth-of-type(1) {
+    color: orange;
+}
+.slogan span:nth-of-type(2) {
+    color: #6e6d6b;
+    font-weight: bold;
+}
+.menu {
+    float: right;
+    line-height: 115px;
+}
+.menu ul {
+    margin: 0;
+    padding: 0;
+}
+.menu ul li i {
+    font-size: 24px;
+}
+.menu ul li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 30px;
+    padding: 0 15px;
+    color: #9e9b9b;
+    text-align: center;
+    line-height: 20px;
+}
+.banner {
+    height: 250px;
+    border-top: 3px solid orange;
+    border-bottom: 3px solid orange;
+    background-image: url("../img/orange.png");
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+.quote {
+    padding: 80px 100px;
+}
+.banner span {
+    text-align: center;
+    width: 210px;
+    display: block;
+    padding: 6px 4px;
+}
+.banner span:nth-of-type(1) {
+    color: orange;
+    font-weight: bold;
+    background-color: #7d7575;
+}
+.banner span:nth-of-type(2) {
+    margin-top: 10px;
+    color: #6e6d6b;
+    font-weight: bold;
+    background-color: #f1bd5e;
+}
+.information {
+    margin: auto;
+}
+.information .content__inner p {
+    margin: 0;
+    width: 90%;
+}
+.information .content__inner a {
+    color:orange;
+    float: right;
+    margin-right: 25px;
+    font-style: italic;
+    text-decoration: none;
+}
+.information .content__inner {
+    display: inline-block;
+    width: 25%;
+    margin: 25px -2px 0 -2px;
+}
+.team h2:after {
+    content: '';
+    display: block;
+    width: 125px;
+    height: 2px;
+    background: orange;
+    margin: auto;
+}
+.team h2 {
+    text-align: center;
+    color: orange;
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-size: 2.3rem;
+}
+
+.card {
+    width: 33.333333%;
+    display: inline-block;
+    margin: 10px -2px 0 -2px;
+}
+.card span {
+    text-align: center;
+    margin: auto;
+    display: block;
+    color: orange;
+
+}
+.card .image img {
+    width: 150%;
+}
+.card .image {
+    overflow: hidden;
+    border-radius: 256px;
+    width: 250px;
+    height: 250px;
+    margin: 20px auto;
+}
+.card p {
+    margin: auto;
+    width: 80%;
+}
