@@ -119,18 +119,25 @@ body {
     letter-spacing: 2px;
     font-size: 2.3rem;
 }
-
 .card {
     width: 33.333333%;
     display: inline-block;
     margin: 10px -2px 0 -2px;
 }
-.card span {
+.card__title {
+    text-align: center;
+}
+.card span:nth-of-type(1) {
     text-align: center;
     margin: auto;
-    display: block;
+    display: inline-block;
+    color: grey;
+}
+.card span:nth-of-type(2) {
+    text-align: center;
+    margin: auto;
+    display: inline-block;
     color: orange;
-
 }
 .card .image img {
     width: 150%;
@@ -145,4 +152,73 @@ body {
 .card p {
     margin: auto;
     width: 80%;
+}
+.contact h2 {
+    text-align: center;
+    color: orange;
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-size: 2.3rem;
+}
+.contact h2:after {
+    content: '';
+    display: block;
+    width: 160px;
+    height: 2px;
+    background: orange;
+    margin: auto;
+}
+.input form input, .input form textarea {
+    width: 85%;
+    display:inline-block;
+    margin-left: -8px;
+    padding: 0;
+    margin-bottom: 35px;
+    background: #ddd;
+    border:0;
+    height: 30px;
+}
+.input form #textarea__label {
+    vertical-align: top;
+}
+.input form textarea {
+    height: auto;
+    resize: none;
+}
+.input form input[type='submit'] {
+    padding: 6px 12px;
+    background: orange;
+    color: #FFF;
+    border-bottom: 3px solid #b77700;
+    width: 120px;
+    float: right;
+    font-size: 1.4rem;
+    font-weight: 100;
+    height: auto;
+}
+.input form label {
+    width: 15%;
+    display: inline-block;
+    vertical-align: middle;
+    color: orange;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+.footer {
+    height: 50px;
+    background-color: orange;
+    margin-top: 60px;
+}
+.footer h1 {
+    text-align: center;
+    color: white;
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height: 50px;
+    margin-bottom: 0;
+}
+.clear {
+    clear:both;
 }
