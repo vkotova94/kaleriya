@@ -2,7 +2,7 @@
     width: 100%;
 }
 .primary {
-    width: 1080px;
+    width: 970px;
     margin: auto;
 }
 body {
@@ -16,20 +16,15 @@ body {
     height: 600px;
     background-image: url("../img/banner.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
-  
-} 
-.head_fon {
-    width: 100%;
-    height: 42px;
-    background-color: #939188;
-    
-    
+    background-size: cover;
+
 }
-.navigation
-{
-    margin-top: -74px;
+.navigation {
+    padding-top: 30px;
+    width: 1080px;
+    margin: auto;
 }
+
 .navigation ul li {
     list-style: none;
     display: inline-block;
@@ -37,35 +32,160 @@ body {
     text-transform: uppercase;
     color: white;
     font-weight: 100;
-    letter-spacing: 1px;
-    padding: 50px;
+    width: calc(16.666666% - 4px);
 }
 .navigation ul {
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
-
-.icons {
-    display: inline-block;
-    color: white;
-    display: inline;
-    float: right;
-    margin-top: -85px;
-    margin-right: 200px;
-    
+.banner_inner {
+    height: 280px;
+    display: block;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
 }
 .icons i {
     padding-right: 25px;
 }
 .pastry {
-    display: inline-block;
-    margin-top: 115px;
-    margin-left: 500px;
+    margin: auto;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 10;
 }
 .pastry span {
+    display: block;
     color: white;
     text-align: center;
     font-size: 80px;
     letter-spacing: 12px;
-    
+}
+.our {
+    margin: auto;
+    width: 100px;
+    height: 25px;
+    background-color: #6f6969;
+    opacity: .7;
+    border: 1px dashed #bda7a7;
+    position: relative;
+    z-index: 10;
+}
+.our span {
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    font-size: 10px;
+    letter-spacing: 2px;
+    padding-top: 5px;
+    font-weight: bold;
+}
+.text {
+    margin:auto;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 10;
+}
+.text span {
+    display: block;
+    text-align: center;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+.blur__bg {
+    width:300px;
+    height:300px;
+    box-shadow: 0px 0px 130px rgba(0,0,0,.8);
+    background: rgba(0,0,0,.35);
+    display: block;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    border-radius: 256px;
+    z-index: 1;
+}
+.middle__double {
+    margin: auto;
+}
+.art {
+    border: 2px solid red;
+    height: 600px;
+    width: 50%;
+    padding-top: 50px;
+}
+.art_text span:nth-of-type(1){
+    display: block;
+    text-align: center;
+    color: #524a4a;
+    font-weight: bold;
+    font-size: 25px;
+}
+.art_text span:nth-of-type(2){
+    display: block;
+    text-align: center;
+    color: #a47d5e;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.art_text p {
+    padding-top: 20px;
+    display: block;
+    text-align: center;
+}
+.art_text span:nth-of-type(3) {
+    display: block;
+    color: #56534c;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+}
+.image_chef img {
+    padding-top: 25px;
+    display: block;
+    margin: auto;
+    position: relative;
+    height: 100px;
+}
+.signature img {
+    display: block;
+    margin: auto;
+    position: relative;
+    height: 175px;
+    padding-top: 70px;
+}
+.benito {
+    margin: 70px 100px;
+}
+.benito span {
+    position: absolute;
+    display: block;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    border-spacing: 20px;
+    font-weight: bold;
+    color: grey;
+    float: left;
 
-  
+}
+.gaspare {
+    margin: 70px 100px;
+}
+.gaspare span {
+    display: block;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    border-spacing: 20px;
+    font-weight: bold;
+    color: grey;
+    float: right;
+}
