@@ -62,8 +62,8 @@ body {
     border-top: 3px solid orange;
     border-bottom: 3px solid orange;
     background-image: url("../img/orange.png");
-    background-repeat: no-repeat;
-    background-position: center right;
+    background-repeat: space;
+
 }
 .quote {
     padding: 80px 100px;
@@ -140,7 +140,7 @@ body {
     color: orange;
 }
 .card .image img {
-    width: 150%;
+    width: 100%;
 }
 .card .image {
     overflow: hidden;
