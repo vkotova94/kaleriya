@@ -1,8 +1,13 @@
+@font-face {
+    font-family: 'Proxima Regular';
+    src: url('./fonts/ProximaNova-Regular.ttf') format('truetype');
+}
 .wide {
     width: 100%;
 }
 .primary {
     width: 970px;
+    height: inherit;
     margin: auto;
 }
 body {
@@ -13,25 +18,31 @@ body {
 .header  {
     background-color: #939188;
     width: 100%;
-    height: 920px;
+    height: 100vh;
     background-image: url("../img/banner.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
 }
-.logo__menu {
+.head {
     height: 54px;
     background-color: #8c8a88;
     opacity: .7;
 }
-.logo img {
+.logo {
     float: left;
+    width:calc(20% - 4px);
+}
+.logo img {
     width: 125px;
     display: block;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 .navigation {
-    padding-top: 11px;
+    line-height: 54px;
     margin: auto;
+    float: right;
+    width: 80%;
 }
 .navigation ul li {
     list-style: none;
@@ -40,7 +51,7 @@ body {
     text-transform: uppercase;
     color: white;
     font-weight: 100;
-    width: calc(12.666666% - 4px);
+    width: calc(16.666666% - 4px);
 }
 .navigation ul {
     text-align: center;
@@ -48,7 +59,7 @@ body {
     padding: 0;
 }
 .banner_inner {
-    height: 60px;
+    height: 310px;
     display: block;
     margin: auto;
     position: absolute;
@@ -62,8 +73,9 @@ body {
 }
 .pastry {
     margin: auto;
-    margin-bottom: 45px;
+    margin-bottom: 25px;
     position: relative;
+    z-index: 2;
 }
 .pastry span {
     display: block;
@@ -72,16 +84,25 @@ body {
     font-size: 80px;
     letter-spacing: 12px;
 }
+.text-decorated {
+    font-family: 'Alegreya', serif;
+}
+.proxima-regular {
+    font-family: 'Proxima Regular';
+}
+.dashed {
+    z-index: 2;
+    position: relative;
+}
 .dashed img {
     display: block;
     margin: auto;
-    z-index: 10;
-
 }
 .our {
     margin: auto;
     width: 100px;
     height: 25px;
+    margin-top: 60px;
     background-color: #6f6969;
     opacity: .7;
     border: 1px dashed #bda7a7;
@@ -100,8 +121,7 @@ body {
 }
 .text {
     margin:auto;
-    margin-top: 40px;
-    margin-bottom: 125px;
+    margin-top: 20px;
     position: relative;
     z-index: 10;
 }
@@ -136,26 +156,30 @@ body {
     position: absolute;
     right: 0;
     left: 0;
-    bottom: -297px;
+    bottom: -30px;
     margin: auto;
 
 }
 .middle__double {
     margin: auto;
     display: flex;
+    padding: 50px 0;
+}
+.bold {
+    font-weight: 700;
+}
+.thin {
+    font-weight: 300;
 }
 .art {
-    border: 2px solid red;
-    height: 600px;
     width: 50%;
-    padding-top: 50px;
 }
 .art_text span:nth-of-type(1){
     display: block;
     text-align: center;
-    color: #524a4a;
+    color: #56534c;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 42px;
 }
 .art_text span:nth-of-type(2){
     margin-top: 5px;
@@ -167,19 +191,21 @@ body {
     text-transform: uppercase;
 }
 .art_text p {
-    padding-top: 20px;
+    padding: 20px 40px 0 40px;
     display: block;
     text-align: center;
+    font-size: 14px;
+    letter-spacing: 1px;
 }
 .art_text span:nth-of-type(3) {
     display: block;
     color: #56534c;
     font-weight: bold;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 15px;
+    font-size: 24px;
 }
 .image_chef img {
-    padding-top: 25px;
     display: block;
     margin: auto;
     height: 100px;
@@ -189,64 +215,83 @@ body {
     margin: auto;
     position: relative;
     height: 115px;
-    padding-top: 70px;
+    margin-top: 10px;
 }
 
-.benito span {
+.double-dashed {
     position: relative;
     display: block;
-    border-top: 1px solid grey;
-    border-bottom: 1px solid grey;
+    border-top: 1px solid #d7d5ca;
+    border-bottom: 1px solid #d7d5ca;
     border-spacing: 20px;
     font-weight: bold;
-    color: grey;
+    color: #56534c;
+    padding: 15px 0;
 }
-
-.gaspare span {
-    position: relative;
-    display: block;
-    border-top: 1px solid grey;
-    border-bottom: 1px solid grey;
-    border-spacing: 20px;
-    font-weight: bold;
-    color: grey;
-    float: right;
+.inline {
+    display: inline-block;
+}
+.benito_chef {
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+}
+.bengas-dashes {
+    width:100px;
+    text-align: center;
+    vertical-align: top;
+    margin-top: 25px;
+}
+.bengas-dashes:first-child {
+    margin-right: 15px;
+}
+.bengas-dashes:last-child {
+    margin-left: 15px;
 }
 .tastes {
-    margin: auto;
-    border: 2px solid red;
-    height: 600px;
-    padding-top: 50px;
     width: calc(50% - 4px);
 }
 .good img {
     display: inline-block;
     margin: auto;
-    width: 480px;
-    height: 440px;
-    padding: 80px 0;
+    width: 100%;
+    padding-top: 20px;
 
+}
+.clearfix {
+    clear:both;
+}
+.img-round {
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    background-size: 200% !important;
+    background-position: center !important;
+    display: inline-block;
+    margin: 0 5px;
 }
 .pancakes {
     width: 100%;
-    height: 760px;
     background-image: url("../img/pan.png");
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 100px 0;
 }
 .pancakes__content {
     display: block;
-    padding-top: 95px;
     position: relative;
-    left: 100px;
+    width: 710px;
+    margin: auto;
 }
 .white_background {
     padding: 45px 55px;
-    margin: auto;
     background-color: white;
     width: 290px;
     height: 290px;
+    float: left;
     position: relative;
+    display: inline-block;
 }
 .img__pancakes img {
     display: block;
@@ -361,14 +406,15 @@ body {
     height: 350px;
 }
 
-
-.img__panakes img {
-    display: block;
+.img__panakes {
     width: 310px;
     height: 380px;
-    position: absolute;
-    top: 95px;
-    left: 180px;
+    display: inline-block;
+    float: left;
+}
+.img__panakes img {
+    width: 100%;
+    height: 100%;
 }
 .circle {
     display: block;
@@ -377,21 +423,25 @@ body {
     border-radius: 50px;
     background-color: white;
     position: absolute;
-    top: 260px;
-    left: 465px;
+    top: 45%;
+    left: -25px;
+}
+.sandwich__list {
+    display: block;
+    height: 500px;
+    margin: auto;
 }
 .sandwich {
     background-color: #f3f1e9;
 }
 .sandwich__inner {
-    height: 800px;
+    height: 565px;
     background-color: #f3f1e9;
 }
 .sandwich__text {
     display: block;
     margin: auto;
     text-align: center;
-    padding-top: 60px;
 
 }
 .sandwich__text span:nth-child(1) {
@@ -406,7 +456,6 @@ body {
     color: #a47d5e;
 }
 .list {
-    margin-top: 125px;
     width: 200px;
     float: left;
 }
@@ -488,21 +537,148 @@ body {
     float: right;
     margin: auto;
     float: right;
-    margin-top: 150px;
+    position: relative;
 }
 .sandwich__img img {
     display: inline-block;
-    width: 650px;
+    width: 590px;
     height: 400px;
     border: 7px solid white;
     margin: auto;
 }
 .recipe {
+    margin: auto;
     display: block;
-    background-color:white;
     width: 90px;
     height: 25px;
+    padding-right: 600px;
 }
 .recipe span {
+    display: inline-block;
     text-align: center;
+    background-color: white;
+    color: #dfc691;
+    border: 1px dashed #dfc691;
+    font-weight: bold;
+    letter-spacing: 1px;
+    width: 115px;
+    height: 35px;
+    line-height: 36px;
+    font-size: 14px;
+
+}
+.calendar {
+    display: block;
+    float: right;
+    width: 200px;
+    position: absolute;
+    right: 0;
+    left: 1050px;
+    z-index: 9;
+}
+.calendar__sandwich {
+    display: block;
+    margin: auto;
+}
+.prep {
+    display: inline-block;
+    background-color: white;
+    opacity: .7;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    line-height: 65px;
+}
+.prep span:nth-child(1) {
+    color: #a47d5e;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: block;
+    font-weight: bold;
+    font-size: 20px;
+}
+.prep span:nth-child(2) {
+    color: #56534c;
+    font-style: 200px;
+    display: block;
+    font-weight: bold;
+    font-size: 65px;
+}
+.prep span:nth-child(3) {
+    color: grey;
+    display: block;
+    font-size: 18px;
+
+}
+.cook {
+    display: inline-block;
+    background-color: white;
+    opacity: .7;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    line-height: 65px;
+}
+.cook span:nth-child(1) {
+    color: #a47d5e;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: block;
+    font-weight: bold;
+    font-size: 20px;
+}
+.cook span:nth-child(2) {
+    color: #56534c;
+    font-style: 200px;
+    display: block;
+    font-weight: bold;
+    font-size: 65px;
+}
+.cook span:nth-child(3) {
+    color: grey;
+    display: block;
+    font-size: 18px;
+}
+.last {
+    display: inline-block;
+    background-color: white;
+    opacity: .7;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    line-height: 65px;
+}
+.last span:nth-child(1) {
+    color: #a47d5e;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: block;
+    font-weight: bold;
+    font-size: 20px;
+}
+.last span:nth-child(2) {
+    color: #56534c;
+    font-style: 200px;
+    display: block;
+    font-weight: bold;
+    font-size: 65px;
+}
+.last span:nth-child(3) {
+    color: grey;
+    display: block;
+    font-size: 18px;
+}
+.footer {
+    margin: auto;
+    height: 65px;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+.contact ul {
+
+}
+.contact ul li {
+    display: inline-block;
+    list-style: none;
+    text-transform: uppercase;
 }
