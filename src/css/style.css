@@ -32,6 +32,10 @@ body {
     height: 54px;
     background-color: #8c8a88;
     opacity: .7;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    
 }
 .logo {
     float: left;
@@ -474,7 +478,7 @@ body {
 
 }
 .img__panakes img {
-    width: 100%;
+    width: 170%;
     height: 100%;
 }
 
@@ -649,7 +653,7 @@ body {
     right: 0;
     z-index: 9;
     top: -6px;
-    left: 486px;
+    left: 487px;
 
 }
 .calendar__sandwich {
@@ -661,8 +665,8 @@ body {
     display: inline-block;
     background-color: white;
     opacity: .7;
-    width: 160px;
-    height: 127px;
+    width: 150px;
+    height: 150px;
     text-align: center;
     line-height: 47px;
 }
@@ -679,7 +683,7 @@ body {
     font-style: 200px;
     display: block;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 51px;
 }
 .prep span:nth-child(3) {
     color: grey;
@@ -691,10 +695,12 @@ body {
     display: inline-block;
     background-color: white;
     opacity: .7;
-    width: 160px;
-    height: 140px;
+    width: 150px;
+    height: 150px;
     text-align: center;
     line-height: 47px;
+    margin: 2px 0;
+    
 }
 .cook span:nth-child(1) {
     color: #a47d5e;
@@ -709,7 +715,7 @@ body {
     font-style: 200px;
     display: block;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 51px;
 }
 .cook span:nth-child(3) {
     color: grey;
@@ -718,14 +724,13 @@ body {
 }
 .last {
     display: inline-block;
-
-
-    width: 160px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
     text-align: center;
     line-height: 47px;
     background-image: url("../img/last.png");
     background-size: cover;
+    box-shadow: 4px 4px 16px #9b9797;
 
 }
 .last span:nth-child(1) {
@@ -741,12 +746,37 @@ body {
     font-style: 200px;
     display: block;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 58px;
+    color: #dfc691;
 }
 .last span:nth-child(3) {
     color: grey;
     display: block;
     font-size: 18px;
+}
+.full {
+    display: block;
+    width: 95px;
+    height: 30px;
+    background-color: white;
+    border: 1px dashed #dfc691;
+    position: absolute;
+    bottom: -5px;
+    left: -13px;
+    right: 0;
+}
+.full span {
+    display: block;
+    text-transform: uppercase;
+    color: #dfc691;
+    text-align: center; 
+    font-size: 13px;
+    line-height: 28px;
+    font-weight: bold;
+
+
+
+
 }
 
 
