@@ -81,6 +81,15 @@ body {
 .navigation ul li:nth-child(even) {
     width: 26px;
 }
+.navigation  ul li a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+    color: white;
+}
+.navigation  ul li a:hover {
+    background-color: rgb(202, 195, 195);
+}
+
 .banner_inner {
     height: 225px;
     display: block;
