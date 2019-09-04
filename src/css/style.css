@@ -52,6 +52,7 @@ body {
     line-height: 54px;
     display: inline-block;
 }
+
 .logo img {
     width: 125px;
     display: block;
@@ -87,7 +88,7 @@ body {
     color: white;
 }
 .navigation  ul li a:hover {
-    background-color: rgb(202, 195, 195);
+    opacity: 0.5;
 }
 
 .banner_inner {
