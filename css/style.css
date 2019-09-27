@@ -1,3 +1,6 @@
+@import url("./media-970.css");
+@import url("./media-768.css");
+
 @keyframes jump {
     0% {
         transform: translate(0) rotate(45deg);
@@ -112,7 +115,7 @@ body {
     margin: auto;
     width: 50%;
     bottom: 0;
-    left: 150px;
+    left: 93px;
     right: 0;
     width: 624px;
     height: 686px;
@@ -860,7 +863,7 @@ body {
     left: 0;
     bottom: auto;
     margin: auto;
-    top: 95px;
+    top: 90px;
     visibility: hidden;
 }
 .clue i {
@@ -961,7 +964,7 @@ body {
     display: inline-block;
     height: 150px;
     text-align: center;
-    width: calc(20% - 65px);;
+    width: calc(20% - 65px);
     margin: 25px 25px 0 25px;
 }
 .skills__inner h2 {
@@ -1002,7 +1005,6 @@ body {
 .pie-wrapper .pie {
     height: 100%;
     width: 100%;
-    /* clip: rect(0, 1em, 1em, 0.5em); */
     left: 0;
     position: absolute;
     top: 0;
@@ -1109,7 +1111,7 @@ body {
 .row  {
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(7, 150px);
+    grid-template-columns: repeat(7, 138px);
     grid-template-rows: repeat(2, 150px);
 }
 .row__img img {
