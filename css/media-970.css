@@ -1,0 +1,57 @@
+@media screen and (min-width: 970px) and (max-width: 1099px) {
+    .primary {
+        width: 800px !important;
+    }
+    .inner__shape .shape__1 {
+        width: 100px !important;
+        height: 100px !important;
+    }
+    .shape__1 span:nth-child(1) {
+        font-size: 24px !important;
+    }
+    .shape__1 span {
+        width: 84px !important;
+        height: 36px !important;
+    }
+    .slider {
+        width: 270px !important;
+    }
+    .slides img {
+        width: 270px !important;
+    }
+    .ipad {
+        width: 380px;
+    }
+    .phone__text {
+        margin: 40px 0 !important;
+    }
+    .wrap__text {
+        margin: 32px 10px !important;
+    }
+    .september span {
+        font-size: 14px !important;
+    }
+    .comment  {
+        padding-right: 64px !important;
+    }
+    .row {
+        grid-template-columns: repeat(4, 150px) !important;
+        grid-template-rows: repeat(2, 150px) !important;
+    }
+    .row__img:nth-child(13) {
+        display: none !important;
+    }
+    .row__img:nth-child(14) {
+        display: none !important;
+    }
+    .after {
+        right: 100px !important;
+    }
+    .standart p {
+        padding: 0 35px !important;
+    }
+    .service__ineer {
+        font-size: 13px !important;
+    }
+
+}

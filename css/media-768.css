@@ -1,0 +1,110 @@
+@media screen and (min-width: 768px) and (max-width: 969px) {
+    .primary {
+        width: 720px !important;
+
+    }
+    .row {
+        grid-template-columns: repeat(3, 150px) !important;
+
+    }
+    .column__one {
+        width: 228px !important;
+    }
+    .comment  {
+        padding-right: 30px !important;
+    }
+    .ipad {
+        width: 300px !important;
+    }
+    .wrap__text {
+        margin: 32px 73px !important;
+    }
+    .after {
+        right: 52px !important;
+    }
+    .inner__shape .shape__1 {
+        width: 90px !important;
+        height: 90px !important;
+    }
+    .project__inner span {
+        font-size: 15px !important;
+    }
+    .bottom__row {
+        width: 715px !important;
+    }
+    .audio img {
+        width: 114px !important;
+    }
+    .row__img:nth-child(12) {
+        display: none !important;
+    }
+    .row__img:nth-child(13) {
+        display: none !important;
+    }
+    .standart {
+        margin: 0px 15px !important;
+    }
+    .standart:nth-of-type(1) {
+        margin-left: 0 !important;
+
+    }
+    .standart:nth-of-type(3) {
+        margin-right: 0 !important;
+
+    }
+    .standart .title {
+        font-size: 23px !important;
+    }
+    .standart .price {
+        font-size: 36px !important;
+    }
+    .standart p {
+        padding: 0 20px  !important;
+    }
+    .column__one {
+        margin: 25px 10px 0 -1px  !important;
+    }
+    .service-container {
+        width: calc(50% - 4px) !important;
+    }
+    .service-container:nth-child(3) {
+        display: none !important;
+    }
+    .service-container:nth-child(4) {
+        display: none !important;
+    }
+    .shape__1 span {
+        width: 86px !important;
+    }
+    .shape__1 span:nth-child(2) {
+        line-height: 65px !important;
+    }
+    .shape__1 span:nth-child(1) {
+        font-size: 26px !important;
+        font-weight: bold;
+    }
+    .shape__1 {
+        width: 92px !important;
+        height: 93px !important;
+    }
+    .text__2 {
+        width: 400px !important;
+
+    }
+    .text__2 p {
+        font-size: 15px !important;
+    }
+    .slider {
+        width: 320px !important;
+    }
+    .slides img {
+        width: 320px !important;
+    }
+
+
+
+
+
+
+
+}
